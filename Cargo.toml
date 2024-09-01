@@ -1,0 +1,11 @@
+[package]
+name = "rust-course"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "^0.8.5" # 0.8.5+, <0.9.0
+time = "0.3.36"
+regex = "1.10.6"
