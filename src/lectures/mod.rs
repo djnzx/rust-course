@@ -1,4 +1,3 @@
-mod lec01;
 mod lec02;
 mod lec03;
 mod lec04;
@@ -8,3 +7,4 @@ mod lec07;
 mod lec08;
 mod lec09;
 mod lec10;
+mod lec11;

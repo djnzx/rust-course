@@ -149,7 +149,5 @@ fn show_u32_f32(nu: &u32) {
 #[test]
 fn precision() {
     println!("decimal  | float    | float binary");
-    [16777216, 16777217, 16777218]
-        .iter()
-        .for_each(show_u32_f32);
+    [16777216, 16777217, 16777218].iter().for_each(show_u32_f32);
 }
