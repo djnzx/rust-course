@@ -1,5 +1,3 @@
-use colored::Colorize;
-
 #[test]
 fn test_1_basic() {
     let x = 123;
@@ -120,42 +118,4 @@ fn test_4_formatting_doubles_scientific_with_precision_width_custom_fill() {
     let s = format!("{:_>20.3e}", x);
 
     assert_eq!("_____________1.235e5", s);
-}
-
-// https://en.wikipedia.org/wiki/ANSI_escape_code
-#[test]
-fn colored_output() {
-    println!("\x1b[31mThis is red text\x1b[0m");
-
-    // Green text
-    println!("\x1b[32mThis is green text\x1b[0m");
-
-    // Blue text
-    println!("\x1b[34mThis is blue text\x1b[0m");
-
-    // Bold yellow text
-    println!("\x1b[1;33mThis is bold yellow text\x1b[0m");
-
-    // Reset text formatting
-    println!("This is normal text");
-}
-
-#[test]
-fn colored_output2() {
-    use colored::*;
-    control::set_override(true);
-
-    println!("{} {}", "This is red".red(), "and this is blue".blue());
-    println!(
-        "{}",
-        "This is bold and yellow"
-            .yellow()
-            .strikethrough()
-    );
-    println!(
-        "{}",
-        "This is green with underline"
-            .green()
-            .underline()
-    );
 }

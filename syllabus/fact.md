@@ -28,7 +28,7 @@
 - enumeration
 - performance
 
-### Lecture 4. Strings, Encodings
+### Lecture 4. Strings, Char, Encodings
 
 - strings
     - methods
