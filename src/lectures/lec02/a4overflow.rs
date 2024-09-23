@@ -1,4 +1,5 @@
-// #[test]
+#[ignore]
+#[test]
 #[allow(arithmetic_overflow)]
 fn overflow() {
     let x = 251_u8;
@@ -7,7 +8,8 @@ fn overflow() {
     let k = 10 as u32 + x as u32;
 }
 
-// #[test]
+#[ignore]
+#[test]
 #[allow(arithmetic_overflow)]
 fn overflow2() {
     let x = 1_u8;

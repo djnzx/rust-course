@@ -1,0 +1,24 @@
+Deadlines - Rust by Practice (https://practice.course.rs)
+
+actually we have 1 week per chapter,
+but we started later, so deadlines a bit compressed
+since we have fixed end of the semester.
+
+5.08.2024 -  1.11.2024 - studying
+4.11.2024 - 15.11.2024 - session
+
+3. Variables - 6.09.2024
+4. Basic Types - 6.09.2024
+5. Ownership and Borrowing - 13.09.2024
+6. Compound Types - 13.09.2024
+7. Flow Control - 20.09.2024
+8. Pattern Match - 20.09.2024
+9. Method & Associated function - 27.09.2024
+10. Generics and Traits - 27.09.2024
+11. Collection Types - 4.10.2024
+12. Type Conversion - 4.10.2024
+13. Result and panic - 11.10.2024
+16. Formatted output - 11.10.2024
+17. Lifetime - 18.10.2024
+18. Functional programing - 25.10.2024
+19. newtype and DST - 1.11.2024

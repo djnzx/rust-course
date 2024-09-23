@@ -10,6 +10,7 @@ fn creation_and_conversion() {
     let s5 = s2.as_str();
 }
 
+#[test]
 fn stack_heap() {
     /// stack
     let data = "initial contents";

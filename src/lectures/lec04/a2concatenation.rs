@@ -12,6 +12,7 @@ fn concatenation_and_length() {
     println!("{}", l1);
 }
 
+#[test]
 fn concatenation() {
     let s1 = String::from("Hello, ");
     let s2 = String::from("world!");

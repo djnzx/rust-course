@@ -119,3 +119,10 @@ fn test_4_formatting_doubles_scientific_with_precision_width_custom_fill() {
 
     assert_eq!("_____________1.235e5", s);
 }
+
+#[test]
+fn memory_address() {
+    let x = 5;
+    let px = &x;
+    println!("{:p}", px)
+}
