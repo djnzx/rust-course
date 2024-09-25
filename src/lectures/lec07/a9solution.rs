@@ -1,19 +1,3 @@
-#[ignore]
-#[test]
-fn solve1() {
-    let x: f32 = solve_quadratic1(1.0, -1.0, 0.0);
-    let (x1, x22): (f32, f32) = solve_quadratic2(1.0, -1.0, 0.0);
-    // what to write and how to write
-}
-
-fn solve_quadratic1(a: f32, b: f32, c: f32) -> f32 {
-    todo!()
-}
-
-fn solve_quadratic2(a: f32, b: f32, c: f32) -> (f32, f32) {
-    todo!()
-}
-
 enum Solution {
     NoRoots,
     OneRoot(f32),

@@ -59,39 +59,43 @@
     - Result[A, E]
 - pattern matching
 
-### Lecture 7
+### Lecture 7. Standard Enums, Pattern Matching
 
-- reference / dereference
-- control operators
-    - if
-    - while / loop
-- iterators
+- Option
+- Result
+- Comparing
 - pattern matching
-- generics basics
 
-### Lecture 8
+### Lecture 8. Control Flow, Iterators
 
-- structurizing code
-- function definition
-- wiring code to data (&self)
-- module definition
-- grouping things by functionality
-- borrowing and ownership
+- if
+- while / loop
+- iterators
+    - map, filter, ...
 
-### Lecture 9
+### Lecture 9.
 
 - traits
+- generics basics
 - implementations
 - Equality, Ordering traits
 
-### Lecture 10
+### Lecture 10.
+
+- structurizing code
+- function definition
+- wiring code to data (&self), static, non-static
+- module definition
+- grouping things by functionality
+
+### Lecture 11
 
 - collections
     - Vector
     - Set
     - HashMap
 
-### Lecture 11
+### Lecture 12 I/O
 
 - input/output
     - random
@@ -102,7 +106,13 @@
     - port i/o
     - API / webserver
 
-### Lecture 12
+### Lecture 13. Memory Related
+
+- reference
+- dereference
+- borrowing and ownership
+
+### Lecture 14. Concurrency
 
 - concurrency fundamentals
     - thread
