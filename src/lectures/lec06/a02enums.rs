@@ -6,6 +6,7 @@ enum Color {
 
 fn whatever1(color: Color) {}
 
+#[test]
 fn test() {
     whatever1(Color::Green);
     // whatever1(Color::Blue);
@@ -27,3 +28,7 @@ enum Message {
     Write(String),
     ChangeColor(i32, i32, i32),
 }
+
+// also valid
+// TODO: how to construct an element of this enum ?
+enum Stub {}

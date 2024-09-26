@@ -41,6 +41,6 @@ fn test4_named_tuple_usage() {
     deliver_pizza(pizza);
 
     // will not compile
-    // print_user(person);
-    // deliver_pizza(pizza);
+    // print_user(pizza);
+    // deliver_pizza(person);
 }
