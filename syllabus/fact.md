@@ -37,12 +37,13 @@
 - for
 - iterations
 
-### Lecture 5. Product types: Tuple, Struct
+### Lecture 5. Product types: Tuple, Named Tuple, Struct
 
 - what programming is
 - data vs code
 - product data types
     - tuples
+    - named tuples
     - structs
 - destructurization
 - examples
@@ -54,9 +55,6 @@
 - data vs code
 - coproduct datatypes
     - enum
-- examples
-    - Option[A]
-    - Result[A, E]
 - pattern matching
 
 ### Lecture 7. Pattern Matching
@@ -72,8 +70,9 @@
 
 ### Lecture 8. Standard Enums, Control Flow.
 
-- Option, no null, no undefined
-- Result
+- standard enums
+    - Option[A], no null, no undefined
+    - Result[A, E]
 - if / else
 - for / while / loop
 - continue / break
@@ -195,3 +194,5 @@
 
 - .
 - .
+
+### Coursework
