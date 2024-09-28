@@ -1,4 +1,4 @@
-## System Programming in Rust. Syllabus
+## System Programming in Rust. Syllabus. I semester
 
 ### Lecture 1. Intro
 
@@ -59,22 +59,31 @@
     - Result[A, E]
 - pattern matching
 
-### Lecture 7. Standard Enums, Pattern Matching
+### Lecture 7. Pattern Matching
 
-- Option
-- Result
+- pure data
+- if guard
+- Products: (Tuple, Named Tuple, Struct)
+- Coproducts: Enum
+- Arrays
+- matches! macro
 - Comparing
 - pattern matching
 
-### Lecture 8. Control Flow, Iterators
+### Lecture 8. Standard Enums, Control Flow.
 
-- if
-- while / loop
-- iterators
-    - map, filter, ...
+- Option, no null, no undefined
+- Result
+- if / else
+- for / while / loop
+- continue / break
+- match
+- returns, labels,
 
 ### Lecture 9.
 
+- iterators
+    - map, filter, ...
 - traits
 - generics basics
 - implementations
@@ -83,6 +92,7 @@
 ### Lecture 10.
 
 - structurizing code
+- no classes,
 - function definition
 - wiring code to data (&self), static, non-static
 - module definition
@@ -95,7 +105,15 @@
     - Set
     - HashMap
 
-### Lecture 12 I/O
+## System Programming in Rust. Syllabus. II semester
+
+### Lecture 1. Memory Related
+
+- reference
+- dereference
+- borrowing and ownership
+
+### Lecture 2 I/O
 
 - input/output
     - random
@@ -106,15 +124,74 @@
     - port i/o
     - API / webserver
 
-### Lecture 13. Memory Related
-
-- reference
-- dereference
-- borrowing and ownership
-
-### Lecture 14. Concurrency
+### Lecture 3. Concurrency. Fundamentals
 
 - concurrency fundamentals
-    - thread
-    - mutex
-    - messaging
+- spawn
+- sleep
+
+### Lecture 4. Concurrency. Primitives
+
+- thread
+- mutex
+- messaging
+
+### Lecture 5. Concurrency. Tokio
+
+- .
+- .
+
+### Lecture 6. Memory. Box, Rc, Arc
+
+- .
+- .
+
+### Lecture 7. I/O USB
+
+- .
+- .
+
+### Lecture 8. I/O Process
+
+- .
+- .
+
+### Lecture 9. I/O System calls
+
+- .
+- .
+
+### Lecture 10. UseCases. DateTime
+
+- .
+- .
+
+### Lecture 11. UseCases. Serialization, Json
+
+- .
+- .
+
+### Lecture 12. UseCases. Random
+
+- .
+- .
+
+### Lecture 13. UseCases. Console App
+
+- .
+- .
+
+### Lecture 14. UseCases. WebServer
+
+- .
+- .
+
+### Lecture 15. UseCases. Database SQL
+
+- .
+- .
+
+### Lecture 16. UseCases. Designing Libraries, Crates
+
+- .
+- .

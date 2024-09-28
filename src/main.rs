@@ -1,6 +1,7 @@
 mod lectures;
 mod practice;
+mod usecases;
 
 fn main() {
-    println!("hello from Rust!");
+    println!("Hello from \u{211D}u\x73\x74😀!");
 }
