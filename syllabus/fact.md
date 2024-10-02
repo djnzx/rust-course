@@ -61,41 +61,48 @@
 
 - pure data
 - if guard
+- exhaustiveness
+- or `|` combination
+- else case
 - Products: (Tuple, Named Tuple, Struct)
 - Coproducts: Enum
-- Arrays
+- Arrays, slices, ranges
 - matches! macro
-- Comparing
-- pattern matching
 
-### Lecture 8. Standard Enums, Control Flow.
+### Lecture 8. Control Flow.
 
-- standard enums
-    - Option[A], no null, no undefined
-    - Result[A, E]
 - if / else
 - for / while / loop
 - continue / break
 - match
-- returns, labels,
+- if returns
+- match returns
+- if let
+- returns, labels
 
-### Lecture 9.
+### Lecture 9. Functions, Closures
 
+- structurizing code
+- functions
+- closures
+- modules
+- use
+- no classes,
+- wiring code to data (&self), static, non-static
+- module definition
+- grouping things by functionality
+
+### Lecture 10. Standard Enums, Iterators
+
+- standard enums
+  - Option[A], no null, no undefined
+  - Result[A, E]
 - iterators
     - map, filter, ...
 - traits
 - generics basics
 - implementations
 - Equality, Ordering traits
-
-### Lecture 10.
-
-- structurizing code
-- no classes,
-- function definition
-- wiring code to data (&self), static, non-static
-- module definition
-- grouping things by functionality
 
 ### Lecture 11
 

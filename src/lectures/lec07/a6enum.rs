@@ -8,14 +8,15 @@ fn solve_quadratic(a: f32, b: f32, c: f32) -> Solution {
     use Solution::*;
 
     let d = b.powi(2) - 4.0 * a * c;
+
     match d {
-        0. => OneRoot(-b / (2. * a)),
-        d if d < 0. => NoRoots,
-        d => {
+        d if d > 0. => {
             let dq = f32::sqrt(d);
             let a2 = a * 2.;
             TwoRoots((-b - dq) / a2, (-b + dq) / a2)
         }
+        0. => OneRoot(-b / (2. * a)),
+        _ => NoRoots,
     }
 }
 
