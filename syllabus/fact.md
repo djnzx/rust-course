@@ -68,17 +68,20 @@
 - Coproducts: Enum
 - Arrays, slices, ranges
 - matches! macro
+- if let
 
 ### Lecture 8. Control Flow.
 
-- if / else
-- for / while / loop
-- continue / break
-- match
-- if returns
-- match returns
-- if let
-- returns, labels
+- `if` / `else` basic
+- `if` / `else` stacked
+- binary operations, boolean algebra
+- `if` returns
+- `for` / `while` / `loop`
+- `continue` / `break`
+- `loop` returns
+- `match`
+- `match` returns
+- labels
 
 ### Lecture 9. Functions, Closures
 
@@ -95,8 +98,8 @@
 ### Lecture 10. Standard Enums, Iterators
 
 - standard enums
-  - Option[A], no null, no undefined
-  - Result[A, E]
+    - Option[A], no null, no undefined
+    - Result[A, E]
 - iterators
     - map, filter, ...
 - traits
