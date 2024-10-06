@@ -85,34 +85,53 @@
 
 ### Lecture 9. Functions, Closures
 
-- structurizing code
-- functions
-- closures
+- grouping things by functionality
+- single responsibility
 - modules
 - use
-- no classes,
-- wiring code to data (&self), static, non-static
-- module definition
-- grouping things by functionality
+- structurizing code
+- functions
+    - input parameter(s)
+    - output parameter(s)
+- closures
 
-### Lecture 10. Standard Enums, Iterators
+### Lecture 10. Traits, Iterators
 
-- standard enums
-    - Option[A], no null, no undefined
-    - Result[A, E]
+- wiring code to data, &self
+    - impl block
+        - struct + fn + static fn
+        - trait + static fn
 - iterators
     - map, filter, ...
 - traits
 - generics basics
 - implementations
-- Equality, Ordering traits
 
-### Lecture 11
+### Lecture 11. Standard Enums, Standard Traits
+
+- standard enums
+    - Option[A], no null, no undefined
+    - Result[A, E]
+    - Ordering
+- standard traits
+    - Display
+    - Debug
+    - From
+    - Into
+    - Add / Sub / Mul / ...
+    - Equality, partial
+    - Ordering
+    - Equality
+
+### Lecture 12
 
 - collections
+    - arrays?
+    - String
     - Vector
-    - Set
     - HashMap
+    - Set
+    - ...
 
 ## System Programming in Rust. Syllabus. II semester
 
