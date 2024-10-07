@@ -95,20 +95,21 @@
     - output parameter(s)
 - closures
 
-### Lecture 10. Traits, Iterators
+### Lecture 10. Impl, Traits
 
-- wiring code to data, &self
-    - impl block
-        - struct + fn + static fn
-        - trait + static fn
+- impl - wiring code to data, &self
+    - impl for struct + fn + static fn + const
+    - impl for enum + fn + static fn + const
+- traits - sharing behavior
+    - impl for trait
+- standard traits
+    - Add / Sub / Mul / ...
+
+### Lecture 11. Iterators, Standard Enums, Standard Traits
+
+- generics basics
 - iterators
     - map, filter, ...
-- traits
-- generics basics
-- implementations
-
-### Lecture 11. Standard Enums, Standard Traits
-
 - standard enums
     - Option[A], no null, no undefined
     - Result[A, E]
@@ -118,20 +119,20 @@
     - Debug
     - From
     - Into
-    - Add / Sub / Mul / ...
     - Equality, partial
     - Ordering
     - Equality
 
-### Lecture 12
+### Lecture 12. Generics, Dependent Types
 
-- collections
-    - arrays?
-    - String
-    - Vector
-    - HashMap
-    - Set
-    - ...
+### Lecture 13. Collections
+
+- arrays?
+- String
+- Vector
+- HashMap
+- Set
+- ...
 
 ## System Programming in Rust. Syllabus. II semester
 
