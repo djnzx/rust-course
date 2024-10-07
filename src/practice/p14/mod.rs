@@ -1,0 +1,1 @@
+mod char_coordinates;

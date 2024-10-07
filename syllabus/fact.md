@@ -95,43 +95,81 @@
     - output parameter(s)
 - closures
 
-### Lecture 10. Traits, Iterators
+### Lecture 10. Impl, Traits
 
-- wiring code to data, &self
-    - impl block
-        - struct + fn + static fn
-        - trait + static fn
+- impl - wiring code to data, &self
+    - impl for struct + fn + static fn + const
+    - impl for enum + fn + static fn + const
+- traits - sharing behavior
+    - impl for trait
+- standard traits
+    - Add / Sub / Mul / ...
+
+### Lecture 11. Iterators
+
+https://doc.rust-lang.org/std/iter/trait.Iterator.html
+
 - iterators
-    - map, filter, ...
-- traits
-- generics basics
-- implementations
+    - constructing
+    - using
+        - not reusable
+        - .next
+        - map
+        - filter
+        - indexes
+        - zip
+        - skip_while
+        - take_while
+        - flatmap
+        - flatten
+        - partition
+    - terminating
+        - find
+        - first
+        - last
+        - sum
+        - count
+        - collect
+        - for each
 
-### Lecture 11. Standard Enums, Standard Traits
+### Lecture 12. Standard Enums, Standard Traits
 
 - standard enums
     - Option[A], no null, no undefined
     - Result[A, E]
     - Ordering
+    - combining Option
+    - combining Result with ?
 - standard traits
     - Display
     - Debug
     - From
     - Into
-    - Add / Sub / Mul / ...
     - Equality, partial
     - Ordering
     - Equality
 
-### Lecture 12
+### Lecture 13. Generics, Dependent Types
 
-- collections
-    - arrays?
-    - String
-    - Vector
-    - HashMap
-    - Set
-    - ...
+- generics basics
+- generic vs dependent type
+
+### Lecture 14. Collections
+
+- arrays?
+- String
+- Vector
+- HashMap
+- Set
+- ...
+
+### Lecture 15. Testing
+
+- what to test
+- how to test
+- assert_eq
+- #[test]
+-
 
 ## System Programming in Rust. Syllabus. II semester
 
