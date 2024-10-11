@@ -105,15 +105,41 @@
 - standard traits
     - Add / Sub / Mul / ...
 
-### Lecture 11. Iterators, Standard Enums, Standard Traits
+### Lecture 11. Iterators
 
-- generics basics
+https://doc.rust-lang.org/std/iter/trait.Iterator.html
+
 - iterators
-    - map, filter, ...
+    - constructing
+    - using
+        - not reusable
+        - .next
+        - map
+        - filter
+        - indexes
+        - zip
+        - skip_while
+        - take_while
+        - flatmap
+        - flatten
+        - partition
+    - terminating
+        - find
+        - first
+        - last
+        - sum
+        - count
+        - collect
+        - for each
+
+### Lecture 12. Standard Enums, Standard Traits
+
 - standard enums
     - Option[A], no null, no undefined
     - Result[A, E]
     - Ordering
+    - combining Option
+    - combining Result with ?
 - standard traits
     - Display
     - Debug
@@ -123,9 +149,13 @@
     - Ordering
     - Equality
 
-### Lecture 12. Generics, Dependent Types
+### Lecture 13. Generics, Dependent Types
+- 
 
-### Lecture 13. Collections
+- generics basics
+- generic vs dependent type
+
+### Lecture 14. Collections
 
 - arrays?
 - String
