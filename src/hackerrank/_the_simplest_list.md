@@ -1,0 +1,22 @@
+### the simplest tasks on Hackerrank.com
+
+- https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/diagonal-difference?isFullScreen=true
+- https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/kangaroo/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/the-birthday-bar/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/divisible-sum-pairs?isFullScreen=true
+- https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/bon-appetit/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/sock-merchant/problem?isFullScreen=true
+- https://www.hackerrank.com/challenges/drawing-book/problem?isFullScreen=true

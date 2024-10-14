@@ -160,7 +160,7 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
 - String
 - Vector
 - HashMap
-- Set
+- HashSet
 - ...
 
 ### Lecture 15. Testing
@@ -169,6 +169,18 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
 - how to test
 - assert_eq
 - #[test]
+-
+
+### Lecture 16. Functional programming
+
+- successors
+- scan
+- fold
+- flat_map
+
+### Lecture 17. Recursion
+
+-
 -
 
 ## System Programming in Rust. Syllabus. II semester

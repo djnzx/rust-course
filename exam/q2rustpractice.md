@@ -1,4 +1,4 @@
-### exam questions
+### exam questions from rust by practice
 
 - fizzbuzz
 - envelope
