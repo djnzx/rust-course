@@ -1,1 +1,1 @@
-mod char_coordinates;
+mod char_indexes;
