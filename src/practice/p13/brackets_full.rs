@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 
 /// straightforward
-fn brackets_is_valid_full(s: String) -> bool {
+fn brackets_is_valid_full1(s: String) -> bool {
     let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
     let open = HashSet::<char>::from_iter("{[(<".chars());
     let close = HashSet::<char>::from_iter("}])>".chars());
@@ -24,8 +24,33 @@ fn brackets_is_valid_full(s: String) -> bool {
     stack.is_empty()
 }
 
-/// more functional
 fn brackets_is_valid_full2(s: String) -> bool {
+    let open = HashSet::<char>::from_iter("{[(<".chars());
+    let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
+
+    let matches = |close: char, open: char| match pairs.get(&close) {
+        Some(&top) => top == open,
+        _ => false,
+    };
+
+    let mut stack = Vec::new();
+
+    for c in s.chars() {
+        match c {
+            c if open.contains(&c) => stack.push(c),
+            c if pairs.contains_key(&c) => match stack.pop() {
+                Some(top) if matches(c, top) => {}
+                _ => return false,
+            },
+            _ => continue,
+        }
+    }
+
+    stack.is_empty()
+}
+
+/// more functional
+fn brackets_is_valid_full3(s: String) -> bool {
     let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
     let open = HashSet::<char>::from_iter("{[(<".chars());
     let close = HashSet::<char>::from_iter("}])>".chars());
@@ -87,7 +112,8 @@ fn is_valid_test2() {
     ];
 
     for (s, r) in test_data {
-        assert_eq!(brackets_is_valid_full(s.to_string()), r);
+        assert_eq!(brackets_is_valid_full1(s.to_string()), r);
         assert_eq!(brackets_is_valid_full2(s.to_string()), r);
+        assert_eq!(brackets_is_valid_full3(s.to_string()), r);
     }
 }
