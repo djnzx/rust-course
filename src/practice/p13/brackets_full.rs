@@ -1,7 +1,87 @@
 use std::collections::{HashMap, HashSet};
 
-/// straightforward
+fn brackets_is_valid_full0(s: String) -> bool {
+    let mut stack = Vec::new();
+
+    for c in s.chars() {
+        match c {
+            '{' => stack.push(c),
+            '(' => stack.push(c),
+            '[' => stack.push(c),
+            '<' => stack.push(c),
+            '}' => match stack.pop() {
+                None => return false,
+                Some(top) => {
+                    if top != '{' {
+                        return false;
+                    }
+                }
+            },
+            ')' => match stack.pop() {
+                None => return false,
+                Some(top) => {
+                    if top != '(' {
+                        return false;
+                    }
+                }
+            },
+            ']' => match stack.pop() {
+                None => return false,
+                Some(top) => {
+                    if top != '[' {
+                        return false;
+                    }
+                }
+            },
+            '>' => match stack.pop() {
+                None => return false,
+                Some(top) => {
+                    if top != '<' {
+                        return false;
+                    }
+                }
+            },
+            _ => {}
+        }
+    }
+
+    stack.is_empty()
+}
+
 fn brackets_is_valid_full1(s: String) -> bool {
+    let open = HashSet::<char>::from_iter("{[(<".chars());
+    let mut stack = Vec::new();
+
+    fn matches(op: char, cur: char) -> bool {
+        match (op, cur) {
+            ('<', '>') => true,
+            ('[', ']') => true,
+            ('(', ')') => true,
+            ('{', '}') => true,
+            _ => false,
+        }
+    }
+
+    for c in s.chars() {
+        match c {
+            c if open.contains(&c) => stack.push(c),
+            c => match stack.pop() {
+                None => return false,
+                Some(x) => {
+                    if !matches(x, c) {
+                        return false;
+                    }
+                }
+            },
+            _ => {}
+        }
+    }
+
+    stack.is_empty()
+}
+
+/// straightforward
+fn brackets_is_valid_full2(s: String) -> bool {
     let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
     let open = HashSet::<char>::from_iter("{[(<".chars());
     let close = HashSet::<char>::from_iter("}])>".chars());
@@ -24,7 +104,7 @@ fn brackets_is_valid_full1(s: String) -> bool {
     stack.is_empty()
 }
 
-fn brackets_is_valid_full2(s: String) -> bool {
+fn brackets_is_valid_full3(s: String) -> bool {
     let open = HashSet::<char>::from_iter("{[(<".chars());
     let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
 
@@ -50,7 +130,7 @@ fn brackets_is_valid_full2(s: String) -> bool {
 }
 
 /// more functional
-fn brackets_is_valid_full3(s: String) -> bool {
+fn brackets_is_valid_full4(s: String) -> bool {
     let pairs = HashMap::from([('}', '{'), (')', '('), (']', '['), ('>', '<')]);
     let open = HashSet::<char>::from_iter("{[(<".chars());
     let close = HashSet::<char>::from_iter("}])>".chars());
