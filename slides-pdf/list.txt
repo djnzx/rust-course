@@ -1,0 +1,11 @@
+Лекція 6. Rust. Intro.
+Лекція 7. Rust. Fundamentals. Data Types
+Лекція 8. Rust. Fundamentals. Arrays
+Лекція 9. Rust Fundamentals. String. Char. Encodings
+Лекція 10. Rust Fundamentals. Compound types. Products
+Лекція 11. Rust Fundamentals. Compound types. Coproducts
+Лекція 12. Rust Fundamentals. Pattern Matching
+Лекція 13. Rust Fundamentals. Flow Control
+Лекція 14. Rust Fundamentals. Functions. Closures
+Лекція 15. Rust Fundamentals. Impl, Traits
+Лекція 16. Rust Fundamentals. Iterators
