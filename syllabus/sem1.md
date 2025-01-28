@@ -56,6 +56,13 @@
 - coproduct datatypes
     - enum
 - pattern matching
+- [//]: # (TODO: Standard enums with examples)
+- standard enums
+    - Option[A], no null, no undefined
+    - Result[A, E]
+    - Ordering
+    - combining Option
+    - combining Result with ?
 
 ### Lecture 7. Pattern Matching
 
@@ -105,6 +112,15 @@
 - standard traits
     - Add / Sub / Mul / ...
 
+- [//]: # (TODO: Standard traits with examples)
+    - Display
+    - Debug
+    - From
+    - Into
+    - Equality, partial
+    - Ordering
+    - Equality
+
 ### Lecture 11. Iterators
 
 https://doc.rust-lang.org/std/iter/trait.Iterator.html
@@ -132,29 +148,7 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
         - collect
         - for each
 
-### Lecture 12. Standard Enums, Standard Traits
-
-- standard enums
-    - Option[A], no null, no undefined
-    - Result[A, E]
-    - Ordering
-    - combining Option
-    - combining Result with ?
-- standard traits
-    - Display
-    - Debug
-    - From
-    - Into
-    - Equality, partial
-    - Ordering
-    - Equality
-
-### Lecture 13. Generics, Dependent Types
-
-- generics basics
-- generic vs dependent type
-
-### Lecture 14. Collections
+### Lecture 12. Collections, Generics
 
 - arrays?
 - String
@@ -163,115 +157,29 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
 - HashSet
 - ...
 
+### Lecture 13. Memory Management. Scopes
+
+- value vs reference
+- stack vs heap
+- reference
+- dereference
+- mutability vs immutability
+- borrowing and ownership
+
+### Lecture 14. I/O
+
+- input/output
+  - random
+  - console, parsing
+  - text file
+  - binary file
+  - network socket
+  - port i/o
+  - API / webserver
+
 ### Lecture 15. Testing
 
 - what to test
 - how to test
 - assert_eq
 - #[test]
--
-
-### Lecture 16. Functional programming
-
-- successors
-- scan
-- fold
-- flat_map
-
-### Lecture 17. Recursion
-
--
--
-
-## System Programming in Rust. Syllabus. II semester
-
-### Lecture 1. Memory Related
-
-- reference
-- dereference
-- borrowing and ownership
-
-### Lecture 2 I/O
-
-- input/output
-    - random
-    - console, parsing
-    - text file
-    - binary file
-    - network socket
-    - port i/o
-    - API / webserver
-
-### Lecture 3. Concurrency. Fundamentals
-
-- concurrency fundamentals
-- spawn
-- sleep
-
-### Lecture 4. Concurrency. Primitives
-
-- thread
-- mutex
-- messaging
-
-### Lecture 5. Concurrency. Tokio
-
-- .
-- .
-
-### Lecture 6. Memory. Box, Rc, Arc
-
-- .
-- .
-
-### Lecture 7. I/O USB
-
-- .
-- .
-
-### Lecture 8. I/O Process
-
-- .
-- .
-
-### Lecture 9. I/O System calls
-
-- .
-- .
-
-### Lecture 10. UseCases. DateTime
-
-- .
-- .
-
-### Lecture 11. UseCases. Serialization, Json
-
-- .
-- .
-
-### Lecture 12. UseCases. Random
-
-- .
-- .
-
-### Lecture 13. UseCases. Console App
-
-- .
-- .
-
-### Lecture 14. UseCases. WebServer
-
-- .
-- .
-
-### Lecture 15. UseCases. Database SQL
-
-- .
-- .
-
-### Lecture 16. UseCases. Designing Libraries, Crates
-
-- .
-- .
-
-### Coursework
