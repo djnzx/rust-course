@@ -56,7 +56,10 @@
 - coproduct datatypes
     - enum
 - pattern matching
-- [//]: # (TODO: Standard enums with examples)
+-
+
+[//]: # (TODO: Standard enums with examples)
+
 - standard enums
     - Option[A], no null, no undefined
     - Result[A, E]
@@ -112,7 +115,10 @@
 - standard traits
     - Add / Sub / Mul / ...
 
-- [//]: # (TODO: Standard traits with examples)
+-
+
+[//]: # (TODO: Standard traits with examples)
+
     - Display
     - Debug
     - From
@@ -121,7 +127,18 @@
     - Ordering
     - Equality
 
-### Lecture 11. Iterators
+### Lecture 12. Collections, Generics
+
+- array
+- String
+- Vector
+- VecDeque
+- HashMap
+- HashSet
+- BTreeMap
+- BTreeSet
+
+### Lecture 12. Iterators
 
 https://doc.rust-lang.org/std/iter/trait.Iterator.html
 
@@ -148,15 +165,6 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
         - collect
         - for each
 
-### Lecture 12. Collections, Generics
-
-- arrays?
-- String
-- Vector
-- HashMap
-- HashSet
-- ...
-
 ### Lecture 13. Memory Management. Scopes
 
 - value vs reference
@@ -169,13 +177,13 @@ https://doc.rust-lang.org/std/iter/trait.Iterator.html
 ### Lecture 14. I/O
 
 - input/output
-  - random
-  - console, parsing
-  - text file
-  - binary file
-  - network socket
-  - port i/o
-  - API / webserver
+    - random
+    - console, parsing
+    - text file
+    - binary file
+    - network socket
+    - port i/o
+    - API / webserver
 
 ### Lecture 15. Testing
 

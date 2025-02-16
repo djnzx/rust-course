@@ -8,8 +8,8 @@
 Лекція 8. Rust Fundamentals. Flow Control
 Лекція 9. Rust Fundamentals. Functions. Closures
 Лекція 10. Rust Fundamentals. Impl, Traits
-Лекція 11. Rust Fundamentals. Collections       TODO: create new !!!
-Лекція 12. Rust Fundamentals. Iterators         TODO: was 11
-Лекція 13. Rust Fundamentals. Memory Management TODO: create new !!!
-Лекція 14. Rust Fundamentals. I/O               TODO: create new !!!
-Лекція 15. Rust Fundamentals. Testing           TODO: create new !!!
+Лекція 11. Rust Fundamentals. Collections
+Лекція 12. Rust Fundamentals. Iterators
+Лекція 13. Rust Fundamentals. Memory Management TODO: create
+Лекція 14. Rust Fundamentals. I/O               TODO: create
+Лекція 15. Rust Fundamentals. Testing           TODO: create
