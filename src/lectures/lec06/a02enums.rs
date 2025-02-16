@@ -22,6 +22,31 @@ enum Option1 {
     Disabled,
 }
 
+enum Result {
+    Found,
+    NotFound { l: Option<i32>, r: Option<i32> },
+}
+
+enum Solution {
+    NoRoots,
+    OneRoot { x: f32 },
+    TwoRoots { x1: f32, x2: f32 },
+}
+
+fn whatever(sol: Solution) {
+    match sol {
+        Solution::NoRoots => {
+            print!("NoRoots");
+        }
+        Solution::OneRoot { x } => {
+            print!("One root ${x}")
+        }
+        Solution::TwoRoots { x1, x2 } => {
+            print!("TwoRoots {x1}, {x2}")
+        }
+    }
+}
+
 enum Message {
     Quit,
     Move { x: i32, y: i32 },
