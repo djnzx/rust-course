@@ -1,6 +1,2 @@
-Лекція 5. Rust Fundamentals. Compound types. Products
-Лекція 6. Rust Fundamentals. Compound types. Coproducts
-Лекція 7. Rust Fundamentals. Pattern Matching
-Лекція 8. Rust Fundamentals. Flow Control
 Лекція 9. Rust Fundamentals. Functions. Closures
 Лекція 10. Rust Fundamentals. Impl, Traits
