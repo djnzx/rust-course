@@ -12,6 +12,7 @@ rand = "0.9.0"
 sysinfo = "0.33.1"
 reqwest = { version = "0.12.12", features = ["blocking", "json"] }
 tokio = { version = "1", features = ["full"] }
+tokio-postgres = "0"
 time = "0.3.37"
 regex = "1.11.1"
 chrono = "0.4.39"

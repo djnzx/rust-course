@@ -1,5 +1,5 @@
-mod in1;
-mod in2;
+mod in1kbd;
+mod in2file;
 mod in3;
 mod in4;
 mod in5;
@@ -7,7 +7,7 @@ mod in6;
 mod out1console;
 mod out2file;
 mod out3http;
-mod out4;
-mod out5;
+mod out4cpu;
+mod out5sql;
 mod out6;
 mod result1;
