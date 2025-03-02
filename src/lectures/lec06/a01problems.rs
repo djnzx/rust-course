@@ -1,4 +1,4 @@
-fn min(xs: &i32) -> i32 {
+fn min(xs: &[i32]) -> i32 {
     todo!()
 }
 
