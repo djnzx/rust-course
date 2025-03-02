@@ -1,0 +1,9 @@
+mod a1declaration;
+mod a2allocation;
+mod a3_ref_deref;
+mod a4_const;
+mod a5_scope;
+mod a6_move_clone;
+mod a7ownership;
+mod a8borrowing;
+mod a9;
