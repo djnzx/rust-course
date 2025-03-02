@@ -1,5 +1,7 @@
 use tokio_postgres::{Error, NoTls};
 
+// will hang / timeout without connection. so, disabled
+#[ignore]
 #[tokio::test]
 async fn db_test() -> Result<(), Error> {
     let cred = "host=localhost user=postgres password=pg123456 dbname=fs8";

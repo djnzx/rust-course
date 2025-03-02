@@ -1,5 +1,7 @@
 use std::io;
 
+// will wait for the input, therefore - disabled
+#[ignore]
 #[test]
 fn test_kbd() {
     print!("Enter your name:");
