@@ -1,69 +1,9 @@
-fn pack0(xs: String) -> Vec<(char, u8)> {
-    let mut outcome = Vec::<(char, u8)>::new();
-
-    for c in xs.chars() {
-        if outcome.is_empty() {
-            outcome.push((c, 1));
-        } else {
-            if c != outcome
-                .last()
-                .unwrap()
-                .0
-            {
-                outcome.push((c, 1));
-            } else {
-                // c == outcome.last
-                let mut last = outcome
-                    .pop()
-                    .unwrap();
-                last.1 += 1;
-                outcome.push(last);
-            }
-        }
-    }
-
-    outcome
-}
-
-fn pack1(xs: String) -> Vec<(char, u8)> {
-    let mut outcome = Vec::<(char, u8)>::new();
-
-    for c in xs.chars() {
-        match outcome.last() {
-            None => outcome.push((c, 1)),
-            Some((ch, cnt)) if *ch != c => {
-                outcome.push((c, 1));
-            }
-            Some((ch, cnt)) => {
-                let new_last = (c, cnt + 1);
-                let _ = outcome.pop();
-                outcome.push(new_last);
-            }
-        }
-    }
-
-    outcome
-}
-
-fn pack2(s: String) -> Vec<(char, usize)> {
-    let mut outcome = Vec::new();
-
-    s.chars()
-        .for_each(|c| match outcome.last() {
-            Some((last, cnt)) if c == *last => {
-                outcome
-                    .last_mut()
-                    .unwrap()
-                    .1 = cnt + 1;
-            }
-            _ => outcome.push((c, 1)),
-        });
-
-    outcome
-}
-
 // fold-left implementation
-fn pack3<A: Clone + PartialEq>(xs: &Vec<A>) -> Vec<(A, usize)> {
+fn pack<A>(xs: &Vec<A>) -> Vec<(A, usize)> {
+    todo!()
+}
+
+fn pack2<A: Clone + PartialEq>(xs: &Vec<A>) -> Vec<(A, usize)> {
     let one = |a: &A| (a.clone(), 1);
 
     xs.iter()
@@ -88,7 +28,7 @@ fn pack3<A: Clone + PartialEq>(xs: &Vec<A>) -> Vec<(A, usize)> {
 }
 
 // iterator-based implementation
-fn pack4<A: Clone + PartialEq>(xs: &Vec<A>) -> Vec<(A, usize)> {
+fn pack1<A: Clone + PartialEq>(xs: &Vec<A>) -> Vec<(A, usize)> {
     let mut iter = xs.iter();
     let mut cur: Option<(A, usize)> = None;
     let mut acc = Vec::<(A, usize)>::new();
@@ -122,27 +62,6 @@ fn unpack<A: Clone + PartialEq>(xs: &Vec<(A, usize)>) -> Vec<A> {
 }
 
 #[test]
-fn pack_test_string() {
-    vec![
-        ("", vec![]),
-        ("a", vec![('a', 1)]),
-        ("ab", vec![('a', 1), ('b', 1)]),
-        ("abc", vec![('a', 1), ('b', 1), ('c', 1)]),
-        ("abbc", vec![('a', 1), ('b', 2), ('c', 1)]),
-        ("abbca", vec![('a', 1), ('b', 2), ('c', 1), ('a', 1)]),
-    ]
-    .iter()
-    .for_each(|(unpacked, packed)| {
-        let real = pack0(unpacked.to_string());
-        println!(
-            "unpacked: {:?} packed real: {:?} packed expected: {:?}",
-            unpacked, real, packed
-        );
-        assert_eq!(real, *packed);
-    })
-}
-
-#[test]
 fn pack_test() {
     let test_cases: Vec<(&str, Vec<(char, usize)>)> = vec![
         ("", vec![]),
@@ -166,11 +85,11 @@ fn pack_test() {
                 .collect::<Vec<_>>();
 
             // pack V1
-            let packed2 = pack3(&unpacked);
+            let packed2 = pack1(&unpacked);
             assert_eq!(packed2, *packed);
 
             // pack V2
-            let packed2 = pack4(&unpacked);
+            let packed2 = pack2(&unpacked);
             assert_eq!(packed2, *packed);
 
             // unpack
