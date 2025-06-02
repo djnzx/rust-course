@@ -1,3 +1,12 @@
+fn add(x: u32, y: u32) -> u32 {
+    x + y
+}
+
+#[test]
+fn test_add() {
+    assert_eq!(add(1, 3), 4);
+}
+
 #[test]
 fn creation_and_conversion() {
     /// creation
