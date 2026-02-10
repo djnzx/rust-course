@@ -14,6 +14,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 - https://doc.rust-lang.org/rust-by-example/
 - https://doc.rust-lang.org/std/all.html
 - https://crates.io
+- https://github.com/shirshak55/Rust-Book-In-PDF
 
 ### My repo links
 
