@@ -1,4 +1,15 @@
+use std::io::Read;
 use std::str::{Bytes, Chars};
+
+#[test]
+fn iteration_chars_ascii() {
+    let s5 = "hello".to_string();
+    for c in s5.chars() {
+        print!("{} ", c);
+    }
+    // h e l l o
+    println!();
+}
 
 #[test]
 fn iteration_chars_non_ascii() {
@@ -44,7 +55,27 @@ fn slicing_utf8_panic() {
 }
 
 #[test]
-fn slicing_utf8_ok() {
+fn slicing_utf8_ok1() {
+    let hello = "Привіт";
+    dbg!(&hello[0..2]); // П
+
+    let s1 = hello[0..4].bytes();
+    for b in s1 {
+        print!("{:08b} ", b);
+    }
+    // 11010000 10011111
+    // ^^^      ^^
+    //    10000    11111
+    //
+    //    1000011111
+    //    ...
+    //    1055
+    //
+    println!();
+}
+
+#[test]
+fn slicing_utf8_ok2() {
     let hello = "Привіт";
     dbg!(&hello[0..4]); // Пр
 }
@@ -55,13 +86,19 @@ fn utf8_1_byte() {
     let hello = String::from("Hello");
     println!("{}", hello);
 
-    hello.chars().for_each(|c| print!("{}, ", c));
+    hello
+        .chars()
+        .for_each(|c| print!("{}, ", c));
     println!();
 
-    hello.bytes().for_each(|b| print!("{}, ", b));
+    hello
+        .bytes()
+        .for_each(|b| print!("{}, ", b));
     println!();
 
-    hello.bytes().for_each(|b| print!("{:#02x}, ", b));
+    hello
+        .bytes()
+        .for_each(|b| print!("{:#02x}, ", b));
     println!();
     // Hello
     // H, e, l, l, o,
@@ -104,9 +141,26 @@ fn utf8_3bytes() {
 
     dbg!(hello); // "नमस\u{94d}त\u{947}"
     dbg!(&chars); // ['न', 'म', 'स', '\u{94d}', 'त', '\u{947}']
-                  // ['न', 'म', 'स', '्',       'त', 'े'      ]
-    dbg!(&bytes); // [224, 164, 168,  224, 164, 174,  224, 164, 184,  224, 165, 141,  224, 164, 164,  224, 165, 135]
-                  //  -------------   -------------   -------------   -------------   -------------   -------------
+    dbg!(&chars); // ['न', 'म', 'स', '्',       'त', 'े'      ]
+
+    dbg!(&chars);
+    // ['न', 'म', 'स', '्', 'त', 'े' ]
+
+    dbg!(&bytes);
+    // [224, 164, 168,  224, 164, 174,  224, 164, 184,
+    //  -------------   -------------   -------------
+    //  224, 165, 141,  224, 164, 164,  224, 165, 135]
+    //  -------------   -------------   -------------
+
+    for b in bytes {
+        print!("{:08b} ", b);
+    }
+    println!();
+    // 11100000 10100100 10101000
+    // ^^^^     ^^       ^^
+    //     0000   100100   101000
+
+    //       0000100100101000
 }
 
 #[test]
@@ -114,16 +168,27 @@ fn utf8_4bytes() {
     let hello = "😀🤪😐🙄";
     println!("{}", hello); // 😀🤪😐🙄
 
-    hello.chars().for_each(|c| print!("{}, ", c));
+    hello
+        .chars()
+        .for_each(|c| print!("{}, ", c));
     println!(); // 😀, 🤪, 😐, 🙄,
 
-    hello.bytes().for_each(|b| print!("{}, ", b));
+    hello
+        .bytes()
+        .for_each(|b| print!("{}, ", b));
     println!();
+    // bytes
+    //
     // 240, 159, 152, 128,  240, 159, 164, 170,
     // ------------------   -------------------
     // 240, 159, 152, 144,  240, 159, 153, 132,
     // ------------------   -------------------
-    println!("{}", hello.len()) // 16
+    println!("{}", hello.len()); // 16
+
+    for b in hello.bytes() {
+        print!("{:08b} ", b);
+    }
+    println!();
 }
 
 fn bytes(c: char) -> Vec<u8> {
