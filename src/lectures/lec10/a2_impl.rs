@@ -1,4 +1,4 @@
-use rand::Rng;
+use rand::RngExt;
 
 #[derive(PartialEq, Debug, Clone)]
 struct Point {
@@ -32,9 +32,9 @@ impl Point {
     }
 
     fn random() -> Self {
-        let mut rt = rand::thread_rng();
-        let x = rt.gen_range(5..50);
-        let y = rt.gen_range(3..100);
+        let mut rt = rand::rng();
+        let x = rt.random_range(5..50);
+        let y = rt.random_range(3..100);
         Point::new(x, y)
     }
 }
